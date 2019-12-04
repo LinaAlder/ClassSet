@@ -1,11 +1,4 @@
-import java.util.Objects;
-/*class Card {
-    int fill, count, shape, color;
-}
-Дополните этот класс методами:
-equals(Object o) - сравнивает объект-карту с произвольным объектом
-toString() - выводит наглядное строковое представление
-Card getThird(Card c) */
+package com.company;
 
 public class Card {
     int fill, count, shape, color;
@@ -28,10 +21,8 @@ public class Card {
     }
     public int getParameter(int p1, int p2){
         int i;
-        if(p1 == p2)
-            i = p1;
-        else
-            i = 6 - p1 - p2;
+        if(p1 == p2) i = p1;
+        else i = 6 - p1 - p2;
         return i;
     }
     public Card getThird(Card c){
